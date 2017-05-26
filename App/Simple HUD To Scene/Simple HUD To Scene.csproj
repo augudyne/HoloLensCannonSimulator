@@ -209,12 +209,12 @@
 
   <ItemGroup>
     <ProjectReference Include="C:\cygwin64\home\Austin\projects\hololens\Simple HUD\Simple HUD To Scene\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj">
-      <Project>{a9d76aa1-806a-41ff-a2c1-95442478cc69}</Project>
+      <Project>{6e2a660e-0723-4c53-9a4c-7f57dbe36eca}</Project>
       <Name>Assembly-CSharp</Name>
       <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="C:\cygwin64\home\Austin\projects\hololens\Simple HUD\Simple HUD To Scene\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj">
-      <Project>{89807598-f600-41be-a937-8084a290f9fa}</Project>
+      <Project>{cce7d0cd-1676-4f3c-9694-039a20252fd0}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
       <Private>False</Private>
     </ProjectReference>

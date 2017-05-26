@@ -87,14 +87,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Holograms\Support\AniCrane\AnimationSpeed.cs" />
+    <Compile Include="Assets\Holograms\Support\Fitbox\Fitbox.cs" />
+    <Compile Include="Assets\Holograms\Support\Fitbox\Interpolator.cs" />
+    <Compile Include="Assets\Holograms\Support\Spatial Mapping\SpatialMapping.cs" />
+    <Compile Include="Assets\Holograms\Support\Underworld\UnderworldReset.cs" />
+    <Compile Include="Assets\Holograms\Support\Underworld\UnderworldSound.cs" />
+    <Compile Include="Assets\PlaceCannonball.cs" />
     <Compile Include="Assets\Scripts\AngleDisplayAdapter.cs" />
     <Compile Include="Assets\Scripts\Boundary.cs" />
     <Compile Include="Assets\Scripts\ButtonBehaviour.cs" />
     <Compile Include="Assets\Scripts\CannonBehaviour.cs" />
     <Compile Include="Assets\Scripts\CustomGravity.cs" />
+    <Compile Include="Assets\Scripts\DecreaseAngleButton.cs" />
     <Compile Include="Assets\Scripts\GazeGestureManager.cs" />
     <Compile Include="Assets\Scripts\IncreaseAngleButton.cs" />
     <Compile Include="Assets\Scripts\SphereCommands.cs" />
+    <Compile Include="Assets\Scripts\TapToPlace.cs" />
     <Compile Include="Assets\Scripts\WorldCursor.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

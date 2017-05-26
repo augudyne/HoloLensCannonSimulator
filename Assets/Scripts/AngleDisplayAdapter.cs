@@ -16,4 +16,10 @@ public class AngleDisplayAdapter : MonoBehaviour {
         TextMesh textDisplay = GetComponent<TextMesh>();
         textDisplay.text = "Current Angle:" + rounded;
 	}
+
+    void OnChildButtonClicked()
+    {
+        Debug.Log("Child Button Clicked");
+        Update();
+    }
 }

@@ -18,16 +18,20 @@ public class CannonBehaviour : MonoBehaviour {
 
     public void Start()
     {
+        
         //get initial cannon rotation
         lastTime = Time.time;
+        
     }
 
     public void Update()
     {
+        
         if (Time.time - lastTime > ShotInterval){//5 second interval
             lastTime = Time.time;
             OnSelect();
         }
+        
     }
 
     public void OnSelect()
@@ -36,24 +40,24 @@ public class CannonBehaviour : MonoBehaviour {
 
         GameObject theCannonball = Instantiate(Projectile, ProjectileSpawn.GetComponent<Transform>().position, Quaternion.identity);
         Rigidbody projectileRB = theCannonball.GetComponent<Rigidbody>();
+        projectileRB.useGravity = false;
+        theCannonball.GetComponent<Collider>().enabled = false;
+        //Physics.IgnoreCollision(theCannonball.GetComponent<Collider>(), GetComponent<Collider>(), true);
         Vector3 initVelocity =
             (BarrelTip.GetComponent<Transform>().position - ProjectileSpawn.GetComponent<Transform>().position) * ProjectileSpeed;
-        Vector3 velocity = initVelocity;
+        Vector3 velocity = new Vector3(initVelocity.x, initVelocity.y, initVelocity.z);
         Vector3[] positions = new Vector3[TRAJECTORY_FRAMES];
         Vector3 prevPos = ProjectileSpawn.GetComponent<Transform>().position;
-        Debug.Log("Initial Position: " + prevPos);
         for (int i = 0; i < TRAJECTORY_FRAMES; i++)
         {
-            
+
             velocity += Gravity * Time.fixedDeltaTime * Vector3.up;
             positions[i] = prevPos + velocity * Time.fixedDeltaTime;
             prevPos = positions[i];
-            Debug.Log("At Position " + i + " : " + prevPos);
         }
 
         GetComponent<LineRenderer>().SetPositions(positions);
         //send the ball flying
         theCannonball.GetComponent<Rigidbody>().velocity = initVelocity;
-        Debug.Log(initVelocity);
     }
 }
