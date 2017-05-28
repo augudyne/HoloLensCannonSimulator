@@ -14,9 +14,11 @@ public class TapToPlace : MonoBehaviour {
         if (placing)
         {
             //in placing mode
+            Debug.Log("In Placing Mode");
             SpatialMapping.Instance.drawVisualMeshes = true;
         } else
         {
+            Debug.Log("Not In Placing Mode");
             SpatialMapping.Instance.drawVisualMeshes = false;
         }
     }
@@ -29,18 +31,13 @@ public class TapToPlace : MonoBehaviour {
             //place the object into the scene using raycast
             var headPosition = Camera.main.GetComponent<Transform>().position;
             var gazeDirection = Camera.main.GetComponent<Transform>().forward;
+            GetComponent<Transform>().position = headPosition + gazeDirection * 5.0f;
 
-            RaycastHit hitInfo;
-
-            if(Physics.Raycast(headPosition, gazeDirection, out hitInfo, 10.0f, SpatialMapping.PhysicsRaycastMask))
-            {
-                GetComponent<Transform>().position = hitInfo.point;
-
-                Quaternion quat = Camera.main.transform.localRotation;
-                quat.x = 0;
-                quat.z = 0;
-                GetComponent<Transform>().rotation = quat;
-            }
+            Quaternion quat = Camera.main.transform.localRotation;
+            quat.x = 0;
+            quat.z = 0;
+            GetComponent<Transform>().rotation = quat;
+          
         }
 	}
 }

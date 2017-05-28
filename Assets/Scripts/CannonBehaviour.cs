@@ -7,31 +7,25 @@ public class CannonBehaviour : MonoBehaviour {
     public GameObject ProjectileSpawn;
     public GameObject BarrelTip;
     public int TRAJECTORY_FRAMES;
-    public static float Gravity = -9.81f;
     public float ProjectileSpeed;
     public float ShotInterval; //in seconds
-
-
-    private float lastTime;
-    
-
 
     public void Start()
     {
         
         //get initial cannon rotation
-        lastTime = Time.time;
-        
+        /*lastTime = Time.time;
+        */
     }
 
     public void Update()
     {
         
-        if (Time.time - lastTime > ShotInterval){//5 second interval
+        /*if (Time.time - lastTime > ShotInterval){//5 second interval
             lastTime = Time.time;
             OnSelect();
         }
-        
+        */
     }
 
     public void OnSelect()
@@ -51,7 +45,7 @@ public class CannonBehaviour : MonoBehaviour {
         for (int i = 0; i < TRAJECTORY_FRAMES; i++)
         {
 
-            velocity += Gravity * Time.fixedDeltaTime * Vector3.up;
+            velocity += CustomGravity.globalGravity * Time.fixedDeltaTime * Vector3.up;
             positions[i] = prevPos + velocity * Time.fixedDeltaTime;
             prevPos = positions[i];
         }
