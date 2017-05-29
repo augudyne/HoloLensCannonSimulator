@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{17A6841E-83A0-95A4-26C1-6D9E818504A4}</ProjectGuid>
+    <ProjectGuid>{D4B45F8B-B295-2EC4-8883-3E9DCD4F8BBE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AssemblyName>Assembly-CSharp</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -93,19 +93,16 @@
     <Compile Include="Assets\Holograms\Support\Spatial Mapping\SpatialMapping.cs" />
     <Compile Include="Assets\Holograms\Support\Underworld\UnderworldReset.cs" />
     <Compile Include="Assets\Holograms\Support\Underworld\UnderworldSound.cs" />
-    <Compile Include="Assets\OneOfSelectionManager.cs" />
-    <Compile Include="Assets\Scripts\AngleDisplayAdapter.cs" />
-    <Compile Include="Assets\Scripts\Boundary.cs" />
-    <Compile Include="Assets\Scripts\ButtonBehaviour.cs" />
-    <Compile Include="Assets\Scripts\CannonBehaviour.cs" />
-    <Compile Include="Assets\Scripts\CustomGravity.cs" />
-    <Compile Include="Assets\Scripts\DecreaseAngleButton.cs" />
     <Compile Include="Assets\Scripts\GazeGestureManager.cs" />
-    <Compile Include="Assets\Scripts\GravityButtonBehaviour.cs" />
-    <Compile Include="Assets\Scripts\IncreaseAngleButton.cs" />
-    <Compile Include="Assets\Scripts\PlaceCannonball.cs" />
-    <Compile Include="Assets\Scripts\SphereCommands.cs" />
-    <Compile Include="Assets\Scripts\TapToPlace.cs" />
+    <Compile Include="Assets\Scripts\Object Behaviour\Boundary.cs" />
+    <Compile Include="Assets\Scripts\Object Behaviour\CannonBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Object Behaviour\CustomGravity.cs" />
+    <Compile Include="Assets\Scripts\Object Behaviour\TapToPlace.cs" />
+    <Compile Include="Assets\Scripts\UI Buttons\AngleDisplayAdapter.cs" />
+    <Compile Include="Assets\Scripts\UI Buttons\DecreaseAngleButton.cs" />
+    <Compile Include="Assets\Scripts\UI Buttons\GravityButton.cs" />
+    <Compile Include="Assets\Scripts\UI Buttons\IncreaseAngleButton.cs" />
+    <Compile Include="Assets\Scripts\UI Buttons\SpawnMarkerButton.cs" />
     <Compile Include="Assets\Scripts\WorldCursor.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
