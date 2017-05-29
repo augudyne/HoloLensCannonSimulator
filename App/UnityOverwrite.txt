@@ -11,7 +11,7 @@ GeneratedProjects\UWP\Assembly-CSharp-firstpass\project.json: 4FCF72A4D5EDB37E24
 Simple HUD To Scene\App.cs: 71846232AAB83D5E3AC63512BBFD0ADE
 Simple HUD To Scene\Package.appxmanifest: 79BCF84348E16F5CF928F1391E415DEB
 Simple HUD To Scene\project.json: 1D02BC64BAC0D041019673A1C4C51737
-Simple HUD To Scene\Simple HUD To Scene.csproj: 817179A9F9F23617CEAC27C1FE8B3CD8
+Simple HUD To Scene\Simple HUD To Scene.csproj: 97D2B30D9F7573DBE7BA1BD6E406A6C7
 Simple HUD To Scene\Simple HUD To Scene.csproj.user: modified
 Simple HUD To Scene\Assets\SplashScreen.scale-200.png: 60618416282ED104FD1473935716045D
 Simple HUD To Scene\Assets\Square150x150Logo.scale-200.png: E02834B4A5DFB97FF8E212C1CACBB084
