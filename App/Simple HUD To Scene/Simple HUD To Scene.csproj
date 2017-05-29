@@ -208,13 +208,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="C:\cygwin64\home\Austin\projects\hololens\Simple HUD\Simple HUD To Scene\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj">
-      <Project>{74fc3f3c-14cb-4c09-82b0-472c018ceedd}</Project>
+    <ProjectReference Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj">
+      <Project>{58358c87-cbbe-49c0-94a2-4574b7edcad9}</Project>
       <Name>Assembly-CSharp</Name>
       <Private>False</Private>
     </ProjectReference>
-    <ProjectReference Include="C:\cygwin64\home\Austin\projects\hololens\Simple HUD\Simple HUD To Scene\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj">
-      <Project>{63a2fc38-385a-4a67-b1a2-2fb691a07889}</Project>
+    <ProjectReference Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj">
+      <Project>{f742d5ab-4d00-4b19-89e3-284a97ac8075}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
       <Private>False</Private>
     </ProjectReference>
