@@ -53,7 +53,7 @@ namespace CannonSim
 
         public void SetWindow(CoreWindow coreWindow)
         {
-            ApplicationView.GetForCurrentView().SuppressSystemOverlays = true;
+            ApplicationView.GetForCurrentView().TryEnterFullScreenMode();
 
             m_AppCallbacks.SetCoreWindowEvents(coreWindow);
             m_AppCallbacks.InitializeD3DWindow();

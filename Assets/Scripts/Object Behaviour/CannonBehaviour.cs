@@ -31,18 +31,27 @@ public class CannonBehaviour : MonoBehaviour {
     public void OnSelect()
     {
         Debug.Log("Inside OnSelect of CannonBehaviour");
-
-        GameObject theCannonball = Instantiate(Projectile, ProjectileSpawn.GetComponent<Transform>().position, Quaternion.identity);
+        GameObject theCannonball = Instantiate(Projectile, BarrelTip.GetComponent<Transform>().position, Quaternion.identity);
         Rigidbody projectileRB = theCannonball.GetComponent<Rigidbody>();
         projectileRB.useGravity = false;
         Physics.IgnoreCollision(theCannonball.GetComponent<Collider>(), this.GetComponent<Collider>(), true);
-     
-        //Physics.IgnoreCollision(theCannonball.GetComponent<Collider>(), GetComponent<Collider>(), true);
+
         Vector3 initVelocity =
             (BarrelTip.GetComponent<Transform>().position - ProjectileSpawn.GetComponent<Transform>().position) * ProjectileSpeed;
         Vector3 velocity = new Vector3(initVelocity.x, initVelocity.y, initVelocity.z);
+
+        Vector3[] positions = generatePositions(initVelocity);
+        GetComponent<LineRenderer>().SetPositions(positions);
+        GetComponent<LineRenderer>().enabled = true;
+        //send the ball flying
+        theCannonball.GetComponent<Rigidbody>().velocity = initVelocity;
+    }
+
+    public Vector3[] generatePositions(Vector3 initialVelocityVector)
+    {
         Vector3[] positions = new Vector3[TRAJECTORY_FRAMES];
-        Vector3 prevPos = ProjectileSpawn.GetComponent<Transform>().position;
+        Vector3 prevPos = BarrelTip.GetComponent<Transform>().position;
+        Vector3 velocity = initialVelocityVector;
         for (int i = 0; i < TRAJECTORY_FRAMES; i++)
         {
 
@@ -51,8 +60,7 @@ public class CannonBehaviour : MonoBehaviour {
             prevPos = positions[i];
         }
 
-        GetComponent<LineRenderer>().SetPositions(positions);
-        //send the ball flying
-        theCannonball.GetComponent<Rigidbody>().velocity = initVelocity;
+        return positions;
+
     }
 }

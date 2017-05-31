@@ -17,9 +17,9 @@ public class AngleDisplayAdapter : MonoBehaviour {
         textDisplay.text = "Current Angle:" + rounded;
 	}
 
-    void OnChildButtonClicked()
+    void OnSelect()
     {
         Debug.Log("Child Button Clicked");
-        Update();
+        GameObject.Find("Cannon").GetComponent<LineRenderer>().enabled = false;
     }
 }

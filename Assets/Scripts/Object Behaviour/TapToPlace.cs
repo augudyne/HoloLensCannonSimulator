@@ -1,30 +1,43 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VR.WSA.Input;
 
 public class TapToPlace : MonoBehaviour {
 
     public Material defaultMaterial;
     public Material placementMaterial;
 
+    private GestureRecognizer recognizer;
     private bool placing = false;
     private float zLock;
 
     private void Start()
     {
         zLock = GameObject.Find("SpawnPoint").GetComponent<Transform>().position.z;
+        recognizer = new GestureRecognizer();
+        recognizer.TappedEvent += (source, tapCount, ray) =>
+        {
+            placing = false;
+            recognizer.StopCapturingGestures();
+        };
     }
+
 
     void OnSelect()
     {
         Debug.Log("TapToPlace Object was Selected");
-        placing = !placing;
+        if (!placing)
+        {
+            placing = true;
+        }
 
         if (placing)
         {
             //in placing mode
             Debug.Log("In Placing Mode");
             SpatialMapping.Instance.drawVisualMeshes = true;
+            recognizer.StartCapturingGestures();
         } else
         {
             Debug.Log("Not In Placing Mode");
@@ -39,6 +52,7 @@ public class TapToPlace : MonoBehaviour {
 
         if (placing) {
             GetComponent<MeshRenderer>().material = placementMaterial;
+            GetComponent<Collider>().enabled = false;
             Vector3 headPosition = Camera.main.GetComponent<Transform>().position;
             Vector3 gazeDirection = Camera.main.GetComponent<Transform>().forward;
 
@@ -51,6 +65,7 @@ public class TapToPlace : MonoBehaviour {
             GetComponent<Transform>().position = resultPosition;
         } else
         {
+            GetComponent<Collider>().enabled =true;
             GetComponent<MeshRenderer>().material = defaultMaterial;
         }
 	}

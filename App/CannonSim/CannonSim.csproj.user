@@ -9,6 +9,16 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DeviceId>6C3DD314-EF85-06D2-68DF-7734EA48770B</DeviceId>
+    <UseEmulator>false</UseEmulator>
+    <RemoteDebugMachine>127.0.0.1</RemoteDebugMachine>
+    <AuthenticationMode>Universal</AuthenticationMode>
+    <RemoteDebugEnabled>true</RemoteDebugEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <RemoteDebugMachine>137.82.166.65</RemoteDebugMachine>
+    <AuthenticationMode>Universal</AuthenticationMode>
+    <RemoteDebugEnabled>false</RemoteDebugEnabled>
+    <DeviceId>6C3DD314-EF85-06D2-68DF-7734EA48770B</DeviceId>
     <UseEmulator>true</UseEmulator>
   </PropertyGroup>
 </Project>
