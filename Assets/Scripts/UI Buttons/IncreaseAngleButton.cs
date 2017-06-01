@@ -21,6 +21,6 @@ public class IncreaseAngleButton : MonoBehaviour {
         Vector3 originalRotation = Barrel.GetComponent<Transform>().rotation.eulerAngles;
         originalRotation.z = Mathf.Clamp(originalRotation.z + 5f, 0, 80);
         Barrel.GetComponent<Transform>().rotation = Quaternion.Euler(originalRotation.x, originalRotation.y, originalRotation.z);
-        SendMessageUpwards("OnChildButtonClicked");
+        //SendMessageUpwards("OnChildButtonClicked");
     }
 }

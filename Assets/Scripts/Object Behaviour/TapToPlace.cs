@@ -9,7 +9,7 @@ public class TapToPlace : MonoBehaviour {
     public Material placementMaterial;
 
     private GestureRecognizer recognizer;
-    private bool placing = false;
+    private bool placing = true;
     private float zLock;
 
     private void Start()
@@ -18,7 +18,7 @@ public class TapToPlace : MonoBehaviour {
         recognizer = new GestureRecognizer();
         recognizer.TappedEvent += (source, tapCount, ray) =>
         {
-            placing = false;
+            placing = true;
             recognizer.StopCapturingGestures();
         };
     }
@@ -38,6 +38,8 @@ public class TapToPlace : MonoBehaviour {
             Debug.Log("In Placing Mode");
             SpatialMapping.Instance.drawVisualMeshes = true;
             recognizer.StartCapturingGestures();
+			print("Turn off placing mode!");
+			placing = false;
         } else
         {
             Debug.Log("Not In Placing Mode");
@@ -51,9 +53,16 @@ public class TapToPlace : MonoBehaviour {
 
 
         if (placing) {
+			EnableGrid();
             GetComponent<MeshRenderer>().material = placementMaterial;
-            GetComponent<Collider>().enabled = false;
-            Vector3 headPosition = Camera.main.GetComponent<Transform>().position;
+			
+			// Disable the collisions between the placement cannonballs and the real cannonballs
+			//GetComponent<Collider>().enabled = false;
+			Physics.IgnoreLayerCollision(8, 9, true);
+			Physics.IgnoreLayerCollision(9, 9, true);
+
+
+			Vector3 headPosition = Camera.main.GetComponent<Transform>().position;
             Vector3 gazeDirection = Camera.main.GetComponent<Transform>().forward;
 
             Vector3 resultPosition = headPosition + gazeDirection * 1.0f;
@@ -68,5 +77,9 @@ public class TapToPlace : MonoBehaviour {
             GetComponent<Collider>().enabled =true;
             GetComponent<MeshRenderer>().material = defaultMaterial;
         }
+	}
+
+	void EnableGrid() {
+		// TODO: make a grid visible
 	}
 }
