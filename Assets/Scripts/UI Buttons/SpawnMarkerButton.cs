@@ -4,6 +4,7 @@ public class SpawnMarkerButton : MonoBehaviour
 {
     public GameObject projectile;
 
+	public GameObject grid;
     
     // Called by GazeGestureManager when the user performs a Select gesture
     void OnSelect()
@@ -13,13 +14,15 @@ public class SpawnMarkerButton : MonoBehaviour
         Vector3 headPosition = Camera.main.transform.position;
         Vector3 gazeDirection = Camera.main.transform.forward;
 
-        Debug.Log("User Location: " + headPosition);
+        //Debug.Log("User Location: " + headPosition);
 
 
         Vector3 placementLocation = headPosition + gazeDirection * 0.5f;
 
-        Debug.Log("Instantiation Location: " + placementLocation);
+        //Debug.Log("Instantiation Location: " + placementLocation);
         var newProjectile = Instantiate(projectile, placementLocation, Quaternion.identity);
+
+		EnableGrid();
     }
 
     // Update is called once per frame
@@ -27,4 +30,9 @@ public class SpawnMarkerButton : MonoBehaviour
     {
       
     }
+
+	void EnableGrid() {
+		// TODO: make a grid visible
+		grid.SetActive(true);
+	}
 }
