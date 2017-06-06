@@ -13,7 +13,7 @@ public class TapToPlace : MonoBehaviour {
 	GameObject grid;
 
     private GestureRecognizer recognizer;
-    private bool placing = true;
+    private bool placing = false;
     private float zLock;
 	private Vector3 posToPlaceOnGrid;
     
