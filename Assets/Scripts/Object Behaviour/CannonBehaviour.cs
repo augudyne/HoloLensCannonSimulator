@@ -8,7 +8,6 @@ public class CannonBehaviour : MonoBehaviour {
     public GameObject BarrelTip;
     public int TRAJECTORY_FRAMES;
     public float ProjectileSpeed;
-    public float ShotInterval; //in seconds
 
     public void Start()
     {
@@ -38,17 +37,18 @@ public class CannonBehaviour : MonoBehaviour {
 
         Vector3 initVelocity =
             (BarrelTip.GetComponent<Transform>().position - ProjectileSpawn.GetComponent<Transform>().position) * ProjectileSpeed;
-        Vector3 velocity = new Vector3(initVelocity.x, initVelocity.y, initVelocity.z);
-
-        Vector3[] positions = generatePositions(initVelocity);
+        Vector3[] positions = generatePositions();
         GetComponent<LineRenderer>().SetPositions(positions);
         GetComponent<LineRenderer>().enabled = true;
+
         //send the ball flying
         theCannonball.GetComponent<Rigidbody>().velocity = initVelocity;
     }
 
-    public Vector3[] generatePositions(Vector3 initialVelocityVector)
+    public Vector3[] generatePositions() 
     {
+        Vector3 initialVelocityVector =
+    (BarrelTip.GetComponent<Transform>().position - ProjectileSpawn.GetComponent<Transform>().position) * ProjectileSpeed;
         Vector3[] positions = new Vector3[TRAJECTORY_FRAMES];
         Vector3 prevPos = BarrelTip.GetComponent<Transform>().position;
         Vector3 velocity = initialVelocityVector;

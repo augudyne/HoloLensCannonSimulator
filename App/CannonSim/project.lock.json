@@ -15893,19 +15893,19 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\cygwin64\\home\\Austin\\projects\\hololens\\Cannon Simulation\\App\\CannonSim\\CannonSim.csproj",
+      "projectUniqueName": "C:\\cygwin64\\home\\Austin\\projects\\hololens\\CannonSim\\App\\CannonSim\\CannonSim.csproj",
       "projectName": "CannonSim",
-      "projectPath": "C:\\cygwin64\\home\\Austin\\projects\\hololens\\Cannon Simulation\\App\\CannonSim\\CannonSim.csproj",
-      "projectJsonPath": "C:\\cygwin64\\home\\Austin\\projects\\hololens\\Cannon Simulation\\App\\CannonSim\\project.json",
+      "projectPath": "C:\\cygwin64\\home\\Austin\\projects\\hololens\\CannonSim\\App\\CannonSim\\CannonSim.csproj",
+      "projectJsonPath": "C:\\cygwin64\\home\\Austin\\projects\\hololens\\CannonSim\\App\\CannonSim\\project.json",
       "projectStyle": "ProjectJson",
       "frameworks": {
         "uap10.0": {
           "projectReferences": {
-            "C:\\cygwin64\\home\\Austin\\projects\\hololens\\Cannon Simulation\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj": {
-              "projectPath": "C:\\cygwin64\\home\\Austin\\projects\\hololens\\Cannon Simulation\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj"
+            "C:\\cygwin64\\home\\Austin\\projects\\hololens\\CannonSim\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj": {
+              "projectPath": "C:\\cygwin64\\home\\Austin\\projects\\hololens\\CannonSim\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj"
             },
-            "C:\\cygwin64\\home\\Austin\\projects\\hololens\\Cannon Simulation\\App\\GeneratedProjects\\UWP\\Assembly-CSharp-firstpass\\Assembly-CSharp-firstpass.csproj": {
-              "projectPath": "C:\\cygwin64\\home\\Austin\\projects\\hololens\\Cannon Simulation\\App\\GeneratedProjects\\UWP\\Assembly-CSharp-firstpass\\Assembly-CSharp-firstpass.csproj"
+            "C:\\cygwin64\\home\\Austin\\projects\\hololens\\CannonSim\\App\\GeneratedProjects\\UWP\\Assembly-CSharp-firstpass\\Assembly-CSharp-firstpass.csproj": {
+              "projectPath": "C:\\cygwin64\\home\\Austin\\projects\\hololens\\CannonSim\\App\\GeneratedProjects\\UWP\\Assembly-CSharp-firstpass\\Assembly-CSharp-firstpass.csproj"
             }
           }
         }

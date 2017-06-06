@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0C9C8F3A-3A7D-4DD5-9011-D12CBDCA62A6}</ProjectGuid>
+    <ProjectGuid>{52E7D419-3201-4DEF-B98E-8CA640DCC436}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AssemblyCSharpWSA</RootNamespace>
@@ -130,8 +130,8 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj">
-      <Project>{29fcf9e0-9592-4d31-acbf-77a3fb802e72}</Project>
+    <ProjectReference Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj">
+      <Project>{15e0f5ac-4a22-4107-be0e-fee6df0ce796}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <Reference Include="UnityEngine">

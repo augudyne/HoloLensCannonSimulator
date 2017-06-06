@@ -5,32 +5,52 @@ using UnityEngine.VR.WSA.Input;
 
 public class TapToPlace : MonoBehaviour {
 
+    private GameObject errorDisplay;
+
     public Material defaultMaterial;
     public Material placementMaterial;
+    
 	GameObject grid;
 
     private GestureRecognizer recognizer;
     private bool placing = true;
     private float zLock;
-	Vector3 posToPlaceOnGrid;
+	private Vector3 posToPlaceOnGrid;
+    
+
+
+
+    private const int CANNONBALL_LAYER = 8;
+    private const int MARKER_LAYER = 9;
+    private const int GRID_LAYER = 10;
+
+
+    private Vector3 intendedPosition;
 
     private void Start()
     {
         zLock = GameObject.Find("SpawnPoint").GetComponent<Transform>().position.z;
+        errorDisplay = GameObject.Find("Error Display");
+        grid = GameObject.Find("Grid");
         recognizer = new GestureRecognizer();
         recognizer.TappedEvent += (source, tapCount, ray) =>
         {
-            placing = true;
+            //show the placement information
+            errorDisplay.GetComponent<TextMesh>().text = "Error: " + getError();
+            placing = false;
             recognizer.StopCapturingGestures();
         };
 
-		grid = GameObject.Find("Grid");
+		
+        
     }
 
 
     void OnSelect()
     {
         Debug.Log("TapToPlace Object was Selected");
+
+        //only toggle to placing mode on click select. Only exits placement mode via gestureRecognizer (tap)
         if (!placing)
         {
             placing = true;
@@ -41,14 +61,14 @@ public class TapToPlace : MonoBehaviour {
             Debug.Log("In Placing Mode");
             SpatialMapping.Instance.drawVisualMeshes = true;
             recognizer.StartCapturingGestures();
-			print("Turn off placing mode!");
-			placing = false;
-			DisableGrid();
+            EnableGrid();
+            
 		} else
         {
+            DisableGrid();
             Debug.Log("Not In Placing Mode");
             SpatialMapping.Instance.drawVisualMeshes = false;
-			EnableGrid();
+            errorDisplay.GetComponent<TextMesh>().text = "Error: " + getError();
 		}
     }
 	
@@ -62,9 +82,9 @@ public class TapToPlace : MonoBehaviour {
 			
 			// Disable the collisions between the placement cannonballs and the real cannonballs
 			//GetComponent<Collider>().enabled = false;
-			Physics.IgnoreLayerCollision(8, 9, true);
-			Physics.IgnoreLayerCollision(9, 9, true);
-			Physics.IgnoreLayerCollision(10, 9, true);
+			Physics.IgnoreLayerCollision(CANNONBALL_LAYER, MARKER_LAYER, true);
+			Physics.IgnoreLayerCollision(MARKER_LAYER, MARKER_LAYER, true);
+			Physics.IgnoreLayerCollision(GRID_LAYER, MARKER_LAYER, true);
 
 
 			RayStuff();
@@ -108,5 +128,17 @@ public class TapToPlace : MonoBehaviour {
 		if (grid.activeSelf) grid.SetActive(false);
 	}
 
-	// TODO: click on placement cannonball again to enter placing mode to edit the position of selected placement cannonball
+	public void setIntendedPosition(Vector3 position)
+    {
+        intendedPosition = position;
+    }
+
+
+
+    //return the error between its current position and `he intended location
+    float getError()
+    {
+        return Vector3.Distance(intendedPosition, GetComponent<Transform>().position);
+
+    }
 }

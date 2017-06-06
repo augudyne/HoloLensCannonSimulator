@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>2e915ce6-c1b6-45c2-accf-1be2386dab1a</PackageIdentityName>
     <PackageIdentityPublisher>CN=DefaultCompany</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\bin\x86\Debug\CannonSim.exe">
+    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\bin\x86\Debug\CannonSim.exe">
       <PackagePath>entrypoint\CannonSim.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Austin\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
@@ -349,7 +349,7 @@
     <AppxPackagedFile Include="C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Debug\UnityEngineProxy.dll">
       <PackagePath>UnityEngineProxy.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\Unprocessed\WinRTLegacy.dll">
+    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\Unprocessed\WinRTLegacy.dll">
       <PackagePath>WinRTLegacy.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Debug\UnityPlayer.dll">
@@ -373,61 +373,61 @@
     <AppxPackagedFile Include="C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Debug\WinRTBridge.winmd">
       <PackagePath>WinRTBridge.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\Resource.res">
+    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\Resource.res">
       <PackagePath>Resource.res</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\Data\globalgamemanagers">
+    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\Data\globalgamemanagers">
       <PackagePath>Data\globalgamemanagers</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\Data\level0">
+    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\Data\level0">
       <PackagePath>Data\level0</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\Data\Resources\unity default resources">
+    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\Data\Resources\unity_builtin_extra">
+    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\Data\Resources\unity_builtin_extra">
       <PackagePath>Data\Resources\unity_builtin_extra</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\Data\globalgamemanagers.assets">
+    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\Data\globalgamemanagers.assets">
       <PackagePath>Data\globalgamemanagers.assets</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\Data\sharedassets0.assets">
+    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\Data\level0.resS">
+    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\Data\level0.resS">
       <PackagePath>Data\level0.resS</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\Data\sharedassets0.assets.resS">
+    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\Data\sharedassets0.assets.resS">
       <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\Data\managedAssemblies.txt">
+    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.15063.0\\redist\Debug\x86\ucrtbased.dll">
@@ -436,38 +436,38 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\UnityEngine.dll">
+    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\UnityEngine.dll">
       <PackagePath>UnityEngine.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\UnityEngine.Analytics.dll">
+    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\UnityEngine.Analytics.dll">
       <PackagePath>UnityEngine.Analytics.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\nunit.framework.dll">
+    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\nunit.framework.dll">
       <PackagePath>nunit.framework.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\UnityEngine.UI.dll">
+    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\UnityEngine.UI.dll">
       <PackagePath>UnityEngine.UI.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\UnityEngine.HoloLens.dll">
+    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\UnityEngine.HoloLens.dll">
       <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\UnityEngine.Networking.dll">
+    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\UnityEngine.VR.dll">
+    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\UnityEngine.VR.dll">
       <PackagePath>UnityEngine.VR.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\Assembly-CSharp.dll">
+    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\Assembly-CSharp.dll">
       <PackagePath>Assembly-CSharp.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\Assembly-CSharp-firstpass.dll">
+    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\Assembly-CSharp-firstpass.dll">
       <PackagePath>Assembly-CSharp-firstpass.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\bin\x86\Debug\Core\CannonSim.exe">
+    <AppxPackagedFile Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\bin\x86\Debug\Core\CannonSim.exe">
       <PackagePath>CannonSim.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

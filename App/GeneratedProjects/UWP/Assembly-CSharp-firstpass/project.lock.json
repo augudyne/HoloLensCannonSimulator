@@ -15490,10 +15490,10 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\cygwin64\\home\\Austin\\projects\\hololens\\Cannon Simulation\\App\\GeneratedProjects\\UWP\\Assembly-CSharp-firstpass\\Assembly-CSharp-firstpass.csproj",
+      "projectUniqueName": "C:\\cygwin64\\home\\Austin\\projects\\hololens\\CannonSim\\App\\GeneratedProjects\\UWP\\Assembly-CSharp-firstpass\\Assembly-CSharp-firstpass.csproj",
       "projectName": "Assembly-CSharp-firstpass",
-      "projectPath": "C:\\cygwin64\\home\\Austin\\projects\\hololens\\Cannon Simulation\\App\\GeneratedProjects\\UWP\\Assembly-CSharp-firstpass\\Assembly-CSharp-firstpass.csproj",
-      "projectJsonPath": "C:\\cygwin64\\home\\Austin\\projects\\hololens\\Cannon Simulation\\App\\GeneratedProjects\\UWP\\Assembly-CSharp-firstpass\\project.json",
+      "projectPath": "C:\\cygwin64\\home\\Austin\\projects\\hololens\\CannonSim\\App\\GeneratedProjects\\UWP\\Assembly-CSharp-firstpass\\Assembly-CSharp-firstpass.csproj",
+      "projectJsonPath": "C:\\cygwin64\\home\\Austin\\projects\\hololens\\CannonSim\\App\\GeneratedProjects\\UWP\\Assembly-CSharp-firstpass\\project.json",
       "projectStyle": "ProjectJson"
     },
     "dependencies": {

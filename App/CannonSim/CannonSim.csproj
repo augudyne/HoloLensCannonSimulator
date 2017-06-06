@@ -208,13 +208,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj">
-      <Project>{eeb05106-777d-42a0-94e9-5c48999d4068}</Project>
+    <ProjectReference Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj">
+      <Project>{2f74d8fb-1359-4ea5-a447-98e9c7ad5d91}</Project>
       <Name>Assembly-CSharp</Name>
       <Private>False</Private>
     </ProjectReference>
-    <ProjectReference Include="C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj">
-      <Project>{90408d3c-2b1b-493b-bd39-a668565e1606}</Project>
+    <ProjectReference Include="C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj">
+      <Project>{15e0f5ac-4a22-4107-be0e-fee6df0ce796}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
       <Private>False</Private>
     </ProjectReference>

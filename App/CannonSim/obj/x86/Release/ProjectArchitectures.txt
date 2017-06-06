@@ -1,4 +1,4 @@
-C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\CannonSim\CannonSim.csproj;x86
-C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
-C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x86
-C:\cygwin64\home\Austin\projects\hololens\Cannon Simulation\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x86
+C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\CannonSim\CannonSim.csproj;x86
+C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
+C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x86
+C:\cygwin64\home\Austin\projects\hololens\CannonSim\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x86

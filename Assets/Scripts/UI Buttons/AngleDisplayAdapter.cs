@@ -19,7 +19,7 @@ public class AngleDisplayAdapter : MonoBehaviour {
 
     void OnSelect()
     {
-        Debug.Log("Child Button Clicked");
-        GameObject.Find("Cannon").GetComponent<LineRenderer>().enabled = false;
+        Debug.Log("AngleDisplayChild Button Clicked");
+        
     }
 }
