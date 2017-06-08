@@ -12,13 +12,10 @@ public class TapToPlace : MonoBehaviour {
     
 	GameObject grid;
 
-    private GestureRecognizer recognizer;
     private bool placing = false;
     private float zLock;
 	private Vector3 posToPlaceOnGrid;
     
-
-
 
     private const int CANNONBALL_LAYER = 8;
     private const int MARKER_LAYER = 9;
@@ -27,22 +24,11 @@ public class TapToPlace : MonoBehaviour {
 
     private Vector3 intendedPosition;
 
-    private void Start()
-    {
+    private void Start(){
         zLock = GameObject.Find("SpawnPoint").GetComponent<Transform>().position.z;
         errorDisplay = GameObject.Find("Error Display");
         grid = GameObject.Find("Grid");
-        recognizer = new GestureRecognizer();
-        recognizer.TappedEvent += (source, tapCount, ray) =>
-        {
-            //show the placement information
-            errorDisplay.GetComponent<TextMesh>().text = "Error: " + getError();
-            placing = false;
-            recognizer.StopCapturingGestures();
-        };
-
-		
-        
+		placing = true;
     }
 
 
@@ -60,7 +46,6 @@ public class TapToPlace : MonoBehaviour {
             //in placing mode
             Debug.Log("In Placing Mode");
             SpatialMapping.Instance.drawVisualMeshes = true;
-            recognizer.StartCapturingGestures();
             EnableGrid();
             
 		} else
