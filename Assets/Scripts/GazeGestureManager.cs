@@ -8,6 +8,9 @@ public class GazeGestureManager : MonoBehaviour
     // Represents the hologram that is currently being gazed at.
     public GameObject FocusedObject { get; private set; }
 
+	[Tooltip("List of GameObjects to ignore focusing on.")]
+	public GameObject[] ignoredObjects;
+
     GestureRecognizer recognizer;
 
     // Use this for initialization
@@ -22,7 +25,16 @@ public class GazeGestureManager : MonoBehaviour
             // Send an OnSelect message to the focused object and its ancestors.
             if (FocusedObject != null)
             {
-                FocusedObject.SendMessageUpwards("OnSelect");
+				// Filters through ignoredObjects to see if focused object should be ignored
+				bool ignoreFocusedObject = false;
+				System.Type focusedObjType = FocusedObject.GetType();
+				foreach (GameObject go in ignoredObjects)
+				{
+					if (go.GetType().Equals(focusedObjType)) ignoreFocusedObject = true;
+				}
+
+
+				if (ignoreFocusedObject) FocusedObject.SendMessageUpwards("OnSelect");
             }
         };
         recognizer.StartCapturingGestures();

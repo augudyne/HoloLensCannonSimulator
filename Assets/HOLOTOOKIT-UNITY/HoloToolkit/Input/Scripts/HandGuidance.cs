@@ -165,5 +165,15 @@ namespace HoloToolkit.Unity.InputModule
 
             base.OnDestroy();
         }
+
+		public GameObject returnHandGuidanceIndicatorGameobject()
+		{
+			return handGuidanceIndicatorGameObject;
+		}
+
+		public void setHandGuidanceIndicatorGameobject(GameObject _newGameobject)
+		{
+			handGuidanceIndicatorGameObject = _newGameobject;
+		}
     }
 }

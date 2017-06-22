@@ -450,7 +450,7 @@
     <Compile Include="Assets\NotifyGameStateChange.cs" />
     <Compile Include="Assets\Scripts\GazeGestureManager.cs" />
     <Compile Include="Assets\Scripts\Grid.cs" />
-    <Compile Include="Assets\Scripts\HandTracking.cs" />
+    <Compile Include="Assets\Scripts\HandTrackingMarkerPlacement.cs" />
     <Compile Include="Assets\Scripts\MouseClickDetectorForTestingWithoutHololens.cs" />
     <Compile Include="Assets\Scripts\Object Behaviour\Boundary.cs" />
     <Compile Include="Assets\Scripts\Object Behaviour\CannonBehaviour.cs" />
