@@ -447,8 +447,27 @@
     <Compile Include="Assets\HOLOTOOKIT-UNITY\Holograms\Support\Spatial Mapping\SpatialMapping.cs" />
     <Compile Include="Assets\HOLOTOOKIT-UNITY\Holograms\Support\Underworld\UnderworldReset.cs" />
     <Compile Include="Assets\HOLOTOOKIT-UNITY\Holograms\Support\Underworld\UnderworldSound.cs" />
+    <Compile Include="Assets\HoloToolkit-Gesture-211\Input\Scripts\CursorFeedback.cs" />
+    <Compile Include="Assets\HoloToolkit-Gesture-211\Input\Scripts\CursorManager.cs" />
+    <Compile Include="Assets\HoloToolkit-Gesture-211\Input\Scripts\GazeManager.cs" />
+    <Compile Include="Assets\HoloToolkit-Gesture-211\Input\Scripts\GazeStabilizer.cs" />
+    <Compile Include="Assets\HoloToolkit-Gesture-211\Input\Scripts\GestureManager.cs" />
+    <Compile Include="Assets\HoloToolkit-Gesture-211\Input\Scripts\HandGuidance.cs" />
+    <Compile Include="Assets\HoloToolkit-Gesture-211\Input\Scripts\HandsManager.cs" />
+    <Compile Include="Assets\HoloToolkit-Gesture-211\Utilities\Scripts\Billboard.cs" />
+    <Compile Include="Assets\HoloToolkit-Gesture-211\Utilities\Scripts\DirectionIndicator.cs" />
+    <Compile Include="Assets\HoloToolkit-Gesture-211\Utilities\Scripts\Interpolator.cs" />
+    <Compile Include="Assets\HoloToolkit-Gesture-211\Utilities\Scripts\SimpleTagalong.cs" />
+    <Compile Include="Assets\HoloToolkit-Gesture-211\Utilities\Scripts\Singleton.cs" />
     <Compile Include="Assets\NotifyGameStateChange.cs" />
     <Compile Include="Assets\Scripts\GazeGestureManager.cs" />
+    <Compile Include="Assets\Scripts\Gesture-211 Scripts\AstronautManager.cs" />
+    <Compile Include="Assets\Scripts\Gesture-211 Scripts\DismissOnSelect.cs" />
+    <Compile Include="Assets\Scripts\Gesture-211 Scripts\ExpandModel.cs" />
+    <Compile Include="Assets\Scripts\Gesture-211 Scripts\GestureAction.cs" />
+    <Compile Include="Assets\Scripts\Gesture-211 Scripts\Interactible.cs" />
+    <Compile Include="Assets\Scripts\Gesture-211 Scripts\InteractibleAction.cs" />
+    <Compile Include="Assets\Scripts\Gesture-211 Scripts\InteractibleManager.cs" />
     <Compile Include="Assets\Scripts\Grid.cs" />
     <Compile Include="Assets\Scripts\HandTrackingMarkerPlacement.cs" />
     <Compile Include="Assets\Scripts\MouseClickDetectorForTestingWithoutHololens.cs" />
@@ -464,6 +483,9 @@
     <Compile Include="Assets\Scripts\WorldCursor.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Gesture-211 Resources\Shaders\SpecularHighlight.shader" />
+    <None Include="Assets\Gesture-211 Resources\Shaders\StandardFastBackFaceCulling.shader" />
+    <None Include="Assets\Gesture-211 Resources\Shaders\UITransparent.shader" />
     <None Include="Assets\HOLOTOOKIT-UNITY\HoloToolkit-Examples\Prototyping\Shaders\UnlitTransparentTriplanar.shader" />
     <None Include="Assets\HOLOTOOKIT-UNITY\HoloToolkit-Examples\Prototyping\Shaders\UnlitTriplanar.shader" />
     <None Include="Assets\HOLOTOOKIT-UNITY\HoloToolkit-Tests\Input\Shaders\button_unlit_shader.shader" />
@@ -501,6 +523,16 @@
     <None Include="Assets\HOLOTOOKIT-UNITY\HoloToolkit\Utilities\Shaders\VertexLitConfigurableTransparent.shader" />
     <None Include="Assets\HOLOTOOKIT-UNITY\HoloToolkit\Utilities\Shaders\WindowOcclusion.shader" />
     <None Include="Assets\HOLOTOOKIT-UNITY\HoloToolkit\Utilities\Shaders\macro.cginc" />
+    <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\LambertianConfigurable.cginc" />
+    <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\LambertianConfigurable.shader" />
+    <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\LambertianConfigurableTransparent.shader" />
+    <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\StandardFast.shader" />
+    <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\UnlitConfigurable.cginc" />
+    <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\UnlitConfigurable.shader" />
+    <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\UnlitConfigurableTransparent.shader" />
+    <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\VertexLitConfigurable.cginc" />
+    <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\VertexLitConfigurable.shader" />
+    <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\VertexLitConfigurableTransparent.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

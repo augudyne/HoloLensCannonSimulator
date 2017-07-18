@@ -156,6 +156,9 @@
     <Compile Include="Assets\HOLOTOOKIT-UNITY\HoloToolkit\Utilities\Shaders\FastConfigurable\Editor\ShaderGUIUtils.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Gesture-211 Resources\Shaders\SpecularHighlight.shader" />
+    <None Include="Assets\Gesture-211 Resources\Shaders\StandardFastBackFaceCulling.shader" />
+    <None Include="Assets\Gesture-211 Resources\Shaders\UITransparent.shader" />
     <None Include="Assets\HOLOTOOKIT-UNITY\HoloToolkit-Examples\Prototyping\Shaders\UnlitTransparentTriplanar.shader" />
     <None Include="Assets\HOLOTOOKIT-UNITY\HoloToolkit-Examples\Prototyping\Shaders\UnlitTriplanar.shader" />
     <None Include="Assets\HOLOTOOKIT-UNITY\HoloToolkit-Tests\Input\Shaders\button_unlit_shader.shader" />
@@ -193,6 +196,16 @@
     <None Include="Assets\HOLOTOOKIT-UNITY\HoloToolkit\Utilities\Shaders\VertexLitConfigurableTransparent.shader" />
     <None Include="Assets\HOLOTOOKIT-UNITY\HoloToolkit\Utilities\Shaders\WindowOcclusion.shader" />
     <None Include="Assets\HOLOTOOKIT-UNITY\HoloToolkit\Utilities\Shaders\macro.cginc" />
+    <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\LambertianConfigurable.cginc" />
+    <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\LambertianConfigurable.shader" />
+    <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\LambertianConfigurableTransparent.shader" />
+    <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\StandardFast.shader" />
+    <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\UnlitConfigurable.cginc" />
+    <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\UnlitConfigurable.shader" />
+    <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\UnlitConfigurableTransparent.shader" />
+    <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\VertexLitConfigurable.cginc" />
+    <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\VertexLitConfigurable.shader" />
+    <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\VertexLitConfigurableTransparent.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

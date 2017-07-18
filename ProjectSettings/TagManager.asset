@@ -9,6 +9,7 @@ TagManager:
   - ProjectileSpawn
   - Cursor
   - Marker
+  - Tip
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - CannonBall
   - Placement CannonBall
   - Grid
-  - 
+  - Cursor
   - 
   - 
   - 
