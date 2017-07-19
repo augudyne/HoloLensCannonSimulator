@@ -470,6 +470,7 @@
     <Compile Include="Assets\Scripts\Gesture-211 Scripts\InteractibleManager.cs" />
     <Compile Include="Assets\Scripts\Grid.cs" />
     <Compile Include="Assets\Scripts\HandTrackingMarkerPlacement.cs" />
+    <Compile Include="Assets\Scripts\MarkerPlacement.cs" />
     <Compile Include="Assets\Scripts\MouseClickDetectorForTestingWithoutHololens.cs" />
     <Compile Include="Assets\Scripts\Object Behaviour\Boundary.cs" />
     <Compile Include="Assets\Scripts\Object Behaviour\CannonBehaviour.cs" />
