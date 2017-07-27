@@ -14,7 +14,7 @@ public class SpawnMarkerButton : MonoBehaviour
     public void updatePositions()
     {
         Debug.Log("Fetching Positions");
-        Vector3[] positions = theCannon.GetComponent<CannonBehaviour>().generatePositions();
+        Vector3[] positions = GameStateManager.lastGeneratedPositions;
         placementCounter = 0;
 
         //truncate the generated positions, taking only every 15 frames (half second presumably)

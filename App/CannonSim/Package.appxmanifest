@@ -4,7 +4,7 @@
   <mp:PhoneIdentity PhoneProductId="2e915ce6-c1b6-45c2-accf-1be2386dab1a" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>CannonSim</DisplayName>
-    <PublisherDisplayName>AustinLarryRhiknow</PublisherDisplayName>
+    <PublisherDisplayName>AustinRhiknow</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>

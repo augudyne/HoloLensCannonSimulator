@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("CannonSim")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("AustinLarryRhiknow")]
+[assembly: AssemblyCompany("AustinRhiknow")]
 [assembly: AssemblyProduct("CannonSim")]
-[assembly: AssemblyCopyright("Copyright © AustinLarryRhiknow 2015")]
+[assembly: AssemblyCopyright("Copyright © AustinRhiknow 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

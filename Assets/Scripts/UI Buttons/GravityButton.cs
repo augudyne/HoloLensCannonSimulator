@@ -7,9 +7,8 @@ public class GravityButton : MonoBehaviour {
 
     void OnSelect()
     {
-        Debug.Log(GetComponent<Transform>().GetComponentInParent<GameObject>());
-        Debug.Log(GetComponent<Transform>().parent.gameObject.GetComponentsInChildren<TextMesh>());
         Component[] siblingMeshs = GetComponent<Transform>().parent.gameObject.GetComponentsInChildren<TextMesh>();
+        SendMessageUpwards("GravityChanged", gravityValue);
         foreach (TextMesh c in siblingMeshs)
         {
             c.color = new Color(1, 1, 1, 1);
